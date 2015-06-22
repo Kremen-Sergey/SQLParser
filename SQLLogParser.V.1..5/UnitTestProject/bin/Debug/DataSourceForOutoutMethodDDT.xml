@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<ArrayOfData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"> 
+  
+  <testData>
+    <requestValue>
+      Select o.owner_id, o.delflag , d.vc, d.is_freezed, d.is_file_locked, d.is_prop_locked, d.is_old_version, d.version_nr from dox_docs d inner join dox_obj o on d.doc_id = o.obj_id where doc_id = @doc_id1 qqq
+    </requestValue>
+    <parametersValue>
+      doc_id1(Int64): '137'
+    </parametersValue>
+    <expectedValue>
+      Select o.owner_id, o.delflag , d.vc, d.is_freezed, d.is_file_locked, d.is_prop_locked, d.is_old_version, d.version_nr from dox_docs d inner join dox_obj o on d.doc_id = o.obj_id where doc_id = 137 qqq
+    </expectedValue>
+    <comment>
+     Test1
+    </comment>
+  </testData>
+  
+  <testData>
+    <requestValue>
+      Select distinct g.prop_group_id, n1.name, n2.name, g.vc, g.tabular, g.dependent_cat, o.orig_obj_id, t.prop_id, n3.name, n4.name, t.value_type, t.max_len, t.input_mask, mg.flag_required, mg.flag_unique, mg.flag_main_value, mg.ref_table_id, t.sel_list_type, ot.orig_obj_id, mg.lfd, g.is_system, t.multi_val_possible, t.is_status, mg.multi_val, mg.filename_value, mg.docname_value,  mg.flag_hidden, mg.flag_readonly, mg.flag_statistic, mg.flag_search_value, mg.default_value,  mg.flag_new_version_on_change  from dox_prop_groups g left join dox_prop_group_members mg on mg.prop_group_id = g.prop_group_id left join dox_prop_types t on mg.prop_id = t.prop_id inner join dox_obj o on o.obj_id = g.prop_group_id and o.delflag = @o_delflag12 and o.subscriber_id = @o_subscriber_id13 left join dox_obj ot on ot.obj_id = t.prop_id inner join dox_names n1 on n1.obj_id = g.prop_group_id and n1.lang_id = @n1_lang_id4  inner join dox_names n2 on n2.obj_id = g.prop_group_id and n2.lang_id = @n2_lang_id5 left join dox_names n3 on n3.obj_id = t.prop_id and n3.lang_id = @n3_lang_id6 left join dox_names n4 on n4.obj_id = t.prop_id and n4.lang_id = @n4_lang_id7  where  g.dependent_cat = @g_dependent_cat1  order by g.is_system, n1.name, mg.lfd
+    </requestValue>
+    <parametersValue>
+      g_dependent_cat1(Int32): '0', o_delflag12(Int32): '0', o_subscriber_id13(Int64): '2', n1_lang_id4(String): 'en_EN', n2_lang_id5(String): 'Sql', n3_lang_id6(String): 'en_EN', n4_lang_id7(String): 'Sql'
+    </parametersValue>
+    <expectedValue>
+      Select distinct g.prop_group_id, n1.name, n2.name, g.vc, g.tabular, g.dependent_cat, o.orig_obj_id, t.prop_id, n3.name, n4.name, t.value_type, t.max_len, t.input_mask, mg.flag_required, mg.flag_unique, mg.flag_main_value, mg.ref_table_id, t.sel_list_type, ot.orig_obj_id, mg.lfd, g.is_system, t.multi_val_possible, t.is_status, mg.multi_val, mg.filename_value, mg.docname_value,  mg.flag_hidden, mg.flag_readonly, mg.flag_statistic, mg.flag_search_value, mg.default_value,  mg.flag_new_version_on_change  from dox_prop_groups g left join dox_prop_group_members mg on mg.prop_group_id = g.prop_group_id left join dox_prop_types t on mg.prop_id = t.prop_id inner join dox_obj o on o.obj_id = g.prop_group_id and o.delflag = 0 and o.subscriber_id = 2 left join dox_obj ot on ot.obj_id = t.prop_id inner join dox_names n1 on n1.obj_id = g.prop_group_id and n1.lang_id = 'en_EN'  inner join dox_names n2 on n2.obj_id = g.prop_group_id and n2.lang_id = 'Sql' left join dox_names n3 on n3.obj_id = t.prop_id and n3.lang_id = 'en_EN' left join dox_names n4 on n4.obj_id = t.prop_id and n4.lang_id = 'Sql'  where  g.dependent_cat = 0  order by g.is_system, n1.name, mg.lfd
+    </expectedValue>
+    <comment>
+    Test2
+    </comment>
+  </testData>
+
+</ArrayOfData>

@@ -1,0 +1,14 @@
+C:\Users\Home\Desktop\work\Task1\WpfApplication.V1.4\BLL\bin\Debug\BLL.dll
+C:\Users\Home\Desktop\work\Task1\WpfApplication.V1.4\BLL\bin\Debug\BLL.pdb
+C:\Users\Home\Desktop\work\Task1\WpfApplication.V1.4\BLL\obj\Debug\BLL.dll
+C:\Users\Home\Desktop\work\Task1\WpfApplication.V1.4\BLL\obj\Debug\BLL.pdb
+C:\Users\Home\Desktop\work\Task1\WpfApplication.V1.4\BLL\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\Home\Desktop\work\Task1\WpfApplication.V1.4\BLL\bin\Debug\Ninject.dll
+C:\Users\Home\Desktop\work\Task1\WpfApplication.V1.4\BLL\bin\Debug\Ninject.xml
+C:\Users\Home\Desktop\work\Task1\SQLLogParser.V.1..5\BLL\bin\Debug\BLL.dll
+C:\Users\Home\Desktop\work\Task1\SQLLogParser.V.1..5\BLL\bin\Debug\BLL.pdb
+C:\Users\Home\Desktop\work\Task1\SQLLogParser.V.1..5\BLL\bin\Debug\Ninject.dll
+C:\Users\Home\Desktop\work\Task1\SQLLogParser.V.1..5\BLL\bin\Debug\Ninject.xml
+C:\Users\Home\Desktop\work\Task1\SQLLogParser.V.1..5\BLL\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\Home\Desktop\work\Task1\SQLLogParser.V.1..5\BLL\obj\Debug\BLL.dll
+C:\Users\Home\Desktop\work\Task1\SQLLogParser.V.1..5\BLL\obj\Debug\BLL.pdb
